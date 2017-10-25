@@ -19,19 +19,7 @@ def drawMickey(color):
 
 def update():
     pygame.display.update()
-
-##def getSequence(color,colorSequence):
-##    if(color[0] == 0 and color[1] == 0 and color[2] == 0):
-##        colorSequence.append("BLACK")
-##    elif(color[0] == 255 and color[1] == 255 and color[2] == 255):
-##        colorSequence.append("WHITE")
-##    elif(color[0] >= 0 and color[1] >= 200 and color[2] >= 0):
-##        colorSequence.append("GREEN")
-##    elif(color[0] >= 200 and color[1] >= 0 and color[2] >= 0):
-##        colorSequence.append("RED")
-##    elif(color[0] >= 0 and color[1] >= 0 and color[2] >= 200):
-##        colorSequence.append("BLUE")
-
+    
 drawMickey(WHITE)
 update()
 
@@ -47,13 +35,8 @@ while running:
         drawMickey(randomColor)
         update()
         numColorChanges += 1
-        #getSequence(randomColor,colorSequence)
     elif(event.type == pygame.MOUSEBUTTONUP):
         update()
     elif(event.type == pygame.KEYDOWN):
         if(event.key == pygame.K_RETURN):
             print("Total number of color changes:",numColorChanges)
-            #print(colorSequence)
-        
-
-            
