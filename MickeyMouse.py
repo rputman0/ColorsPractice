@@ -29,7 +29,6 @@ while running:
         if event.type == pygame.QUIT:
             running = False
 
-    #store random sequence into string?
     if(event.type == pygame.MOUSEBUTTONDOWN):
         randomColor = [randint(0,255),randint(0,255),randint(0,255)]
         drawMickey(randomColor)
